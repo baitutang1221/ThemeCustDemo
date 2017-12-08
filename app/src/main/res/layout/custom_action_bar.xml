@@ -1,0 +1,47 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:background="#4169E1">
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/back"
+        android:scaleType="centerInside"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="title"
+        />
+
+    <ImageView
+        android:id="@+id/button_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_action_scan"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"/>
+
+
+    <ImageView
+        android:id="@+id/button_else"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/share"
+        android:scaleType="centerInside"
+        android:layout_alignTop="@+id/button_option"
+        android:layout_toLeftOf="@+id/button_option"
+        android:layout_toStartOf="@+id/button_option" />
+
+</RelativeLayout>

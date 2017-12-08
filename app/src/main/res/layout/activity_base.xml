@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#4169E1"
+    tools:context="com.neo.baidumap.themecustdemo.BaseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <com.neo.baidumap.themecustdemo.CustomActionbar
+            android:id="@+id/customActionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/cust_button"
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_below="@+id/customActionbar"
+            android:text="定制button"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@drawable/selector_button"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="40dip"
+            android:gravity="center"/>
+
+
+        <Switch
+            android:id="@+id/cust_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_below="@+id/cust_button"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="40dip"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定制Switch"
+            android:textColor="#000"
+            android:layout_alignBaseline="@+id/cust_switch"
+            android:layout_alignBottom="@+id/cust_switch"
+            android:layout_alignLeft="@+id/cust_switch"
+            android:layout_alignStart="@+id/cust_switch"
+            android:layout_marginLeft="69dp"
+            android:layout_marginStart="69dp" />
+
+
+        <ProgressBar
+            android:id="@+id/cust_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_below="@+id/cust_switch"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="40dip"
+            style="@style/mProgress_circle"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:text="定制ProgressBar"
+            android:textColor="#000"
+            android:layout_alignBottom="@+id/cust_progress"
+            android:layout_alignRight="@+id/cust_button"
+            android:layout_alignEnd="@+id/cust_button" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cust_progress"
+            android:layout_alignStart="@+id/cust_progress"
+            android:layout_below="@+id/cust_progress"
+            android:layout_marginTop="47dp"
+            android:textColor="@drawable/text_color"
+            android:text="定制TextView颜色" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
